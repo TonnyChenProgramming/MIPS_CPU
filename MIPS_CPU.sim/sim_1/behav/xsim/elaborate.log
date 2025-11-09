@@ -10,7 +10,7 @@ Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/Top_Single_Cycle_CPU.v" Line 1. Module Top_Single_Cycle_CPU doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/ProgramCounter.v" Line 1. Module ProgramCounter doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionMemory.v" Line 1. Module InstructionMemory doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionToControlSignal.v" Line 1. Module InstructionToControlSignal doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionToControlSignal.v" Line 6. Module InstructionToControlSignal doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/SignExtend.v" Line 1. Module SignExtend doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/RegisterFile.v" Line 1. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/ALUControl.v" Line 1. Module ALUControl doesn't have a timescale but at least one module in design has a timescale.
@@ -19,7 +19,7 @@ WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/DataMemory.v" Line
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/Top_Single_Cycle_CPU.v" Line 1. Module Top_Single_Cycle_CPU doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/ProgramCounter.v" Line 1. Module ProgramCounter doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionMemory.v" Line 1. Module InstructionMemory doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionToControlSignal.v" Line 1. Module InstructionToControlSignal doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionToControlSignal.v" Line 6. Module InstructionToControlSignal doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/SignExtend.v" Line 1. Module SignExtend doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/RegisterFile.v" Line 1. Module RegisterFile doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "C:/FPGAProject/MIPS_CPU/VerilogFiles/ALUControl.v" Line 1. Module ALUControl doesn't have a timescale but at least one module in design has a timescale.

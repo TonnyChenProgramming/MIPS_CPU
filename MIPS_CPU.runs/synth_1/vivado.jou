@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sun Nov  9 17:50:04 2025
-# Process ID         : 27380
+# Start of session at: Sun Nov  9 18:07:50 2025
+# Process ID         : 2436
 # Current directory  : C:/FPGAProject/MIPS_CPU/MIPS_CPU.runs/synth_1
 # Command line       : vivado.exe -log Top_Single_Cycle_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Single_Cycle_CPU.tcl
 # Log file           : C:/FPGAProject/MIPS_CPU/MIPS_CPU.runs/synth_1/Top_Single_Cycle_CPU.vds
@@ -19,6 +19,6 @@
 # Host memory        : 16383 MB
 # Swap memory        : 10200 MB
 # Total Virtual      : 26584 MB
-# Available Virtual  : 2491 MB
+# Available Virtual  : 1536 MB
 #-----------------------------------------------------------
 source Top_Single_Cycle_CPU.tcl -notrace
