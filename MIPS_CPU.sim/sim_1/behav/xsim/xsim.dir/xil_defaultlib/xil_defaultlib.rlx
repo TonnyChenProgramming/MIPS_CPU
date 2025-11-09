@@ -1,0 +1,15 @@
+0.7
+2020.2
+May 22 2025
+00:13:55
+C:/FPGAProject/MIPS_CPU/MIPS_CPU.sim/sim_1/behav/xsim/glbl.v,1741209010,verilog,,,,glbl,,,,,,,,
+C:/FPGAProject/MIPS_CPU/MIPS_CPU.srcs/sim_1/new/SingleCycleCPUtb.v,1762598145,verilog,,,,SingleCycleCPUtb,,,../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/FPGAProject/MIPS_CPU/VerilogFiles/ALUControl.v,1762588069,verilog,,C:/FPGAProject/MIPS_CPU/VerilogFiles/ALU_32bits.v,,ALUControl,,,../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/FPGAProject/MIPS_CPU/VerilogFiles/ALU_32bits.v,1762515818,verilog,,C:/FPGAProject/MIPS_CPU/VerilogFiles/DataMemory.v,,ALU_32bits,,,../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/FPGAProject/MIPS_CPU/VerilogFiles/DataMemory.v,1762596407,verilog,,C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionMemory.v,,DataMemory,,,../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionMemory.v,1762663794,verilog,,C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionToControlSignal.v,,InstructionMemory,,,../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionToControlSignal.v,1762656466,verilog,,C:/FPGAProject/MIPS_CPU/VerilogFiles/ProgramCounter.v,,InstructionToControlSignal,,,../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/FPGAProject/MIPS_CPU/VerilogFiles/ProgramCounter.v,1762596155,verilog,,C:/FPGAProject/MIPS_CPU/VerilogFiles/RegisterFile.v,,ProgramCounter,,,../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/FPGAProject/MIPS_CPU/VerilogFiles/RegisterFile.v,1762597039,verilog,,C:/FPGAProject/MIPS_CPU/VerilogFiles/SignExtend.v,,RegisterFile,,,../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/FPGAProject/MIPS_CPU/VerilogFiles/SignExtend.v,1762568958,verilog,,C:/FPGAProject/MIPS_CPU/VerilogFiles/Top_Single_Cycle_CPU.v,,SignExtend,,,../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,
+C:/FPGAProject/MIPS_CPU/VerilogFiles/Top_Single_Cycle_CPU.v,1762658812,verilog,,C:/FPGAProject/MIPS_CPU/MIPS_CPU.srcs/sim_1/new/SingleCycleCPUtb.v,,Top_Single_Cycle_CPU,,,../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef,,,,,

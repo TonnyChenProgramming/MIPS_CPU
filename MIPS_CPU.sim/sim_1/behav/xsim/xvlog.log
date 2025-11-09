@@ -1,0 +1,21 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGAProject/MIPS_CPU/VerilogFiles/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGAProject/MIPS_CPU/VerilogFiles/ALU_32bits.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_32bits
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGAProject/MIPS_CPU/VerilogFiles/DataMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionMemory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMemory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGAProject/MIPS_CPU/VerilogFiles/InstructionToControlSignal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionToControlSignal
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGAProject/MIPS_CPU/VerilogFiles/ProgramCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgramCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGAProject/MIPS_CPU/VerilogFiles/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGAProject/MIPS_CPU/VerilogFiles/SignExtend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SignExtend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGAProject/MIPS_CPU/VerilogFiles/Top_Single_Cycle_CPU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top_Single_Cycle_CPU
+WARNING: [VRFC 10-3380] identifier 'zero_flag' is used before its declaration [C:/FPGAProject/MIPS_CPU/VerilogFiles/Top_Single_Cycle_CPU.v:16]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/FPGAProject/MIPS_CPU/MIPS_CPU.srcs/sim_1/new/SingleCycleCPUtb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SingleCycleCPUtb

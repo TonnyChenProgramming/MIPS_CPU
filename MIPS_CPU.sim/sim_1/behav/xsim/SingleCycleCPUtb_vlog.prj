@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../VerilogFiles/ALUControl.v" \
+"../../../../VerilogFiles/ALU_32bits.v" \
+"../../../../VerilogFiles/DataMemory.v" \
+"../../../../VerilogFiles/InstructionMemory.v" \
+"../../../../VerilogFiles/InstructionToControlSignal.v" \
+"../../../../VerilogFiles/ProgramCounter.v" \
+"../../../../VerilogFiles/RegisterFile.v" \
+"../../../../VerilogFiles/SignExtend.v" \
+"../../../../VerilogFiles/Top_Single_Cycle_CPU.v" \
+"../../../../MIPS_CPU.srcs/sim_1/new/SingleCycleCPUtb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
