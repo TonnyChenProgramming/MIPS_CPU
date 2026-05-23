@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\FPGAProject\MIPS_CPU\VerilogFiles\PipelineReferenceModel\src\hello_world.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\FPGAProject\MIPS_CPU\VerilogFiles\PipelineReferenceModel\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{88C03666-79DC-36E3-9C79-8054AAB3DF32}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

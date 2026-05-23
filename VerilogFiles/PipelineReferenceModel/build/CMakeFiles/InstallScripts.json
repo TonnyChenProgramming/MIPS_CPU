@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/FPGAProject/MIPS_CPU/VerilogFiles/PipelineReferenceModel/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

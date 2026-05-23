@@ -4,7 +4,7 @@ module SingleCycleCPUtb;
 
   // 50 MHz clock: 20 ns period (toggle every 10 ns)
   reg clk = 0;
-  always #100 clk = ~clk;
+  always #10 clk = ~clk;
 
   // Reset must be reg because we drive it
   reg reset = 1;

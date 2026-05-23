@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\FPGAProject\MIPS_CPU\VerilogFiles\PipelineReferenceModel\build\CMakeFiles\0a43748f713892af129e0f06cd745d64\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{023724D9-977F-3A43-A1A4-102FF72AAB17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

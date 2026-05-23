@@ -1,0 +1,349 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Nov 23 15:19:44 2025
+# Process ID         : 17728
+# Current directory  : C:/FPGAProject/MIPS_CPU/MIPS_CPU.runs/synth_1
+# Command line       : vivado.exe -log Top_Pipeline_CPU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Pipeline_CPU.tcl
+# Log file           : C:/FPGAProject/MIPS_CPU/MIPS_CPU.runs/synth_1/Top_Pipeline_CPU.vds
+# Journal file       : C:/FPGAProject/MIPS_CPU/MIPS_CPU.runs/synth_1\vivado.jou
+# Running On         : TonnyLenovo
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : AMD Ryzen 7 8840HS w/ Radeon 780M Graphics     
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16383 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 27121 MB
+# Available Virtual  : 2550 MB
+#-----------------------------------------------------------
+source Top_Pipeline_CPU.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/FPGAProject/MIPS_CPU/MIPS_CPU.srcs/utils_1/imports/synth_1/ALU_32bits.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/FPGAProject/MIPS_CPU/MIPS_CPU.srcs/utils_1/imports/synth_1/ALU_32bits.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Top_Pipeline_CPU -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2160
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1013.367 ; gain = 497.328
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-11121] redeclaration of ANSI port 'write_back_data' is not allowed [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/Top_Pipeline_CPU.v:53]
+INFO: [Synth 8-6157] synthesizing module 'Top_Pipeline_CPU' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/Top_Pipeline_CPU.v:1]
+INFO: [Synth 8-6157] synthesizing module 'IF_Stage' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/IF_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ProgramCounter' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/ProgramCounter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ProgramCounter' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/ProgramCounter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/InstructionMemory.v:1]
+INFO: [Synth 8-3876] $readmem data file 'prog.mem' is read successfully [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/InstructionMemory.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/InstructionMemory.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IF_Stage' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/IF_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ID_Stage' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/ID_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'HazardDetectionUnit' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/HazardDetectionUnit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'HazardDetectionUnit' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/HazardDetectionUnit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'InstructionToControlSignal' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/InstructionToControlSignal.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionToControlSignal' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/InstructionToControlSignal.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/RegisterFile.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/RegisterFile.v:1]
+INFO: [Synth 8-6157] synthesizing module 'SignExtend' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/SignExtend.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'SignExtend' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/SignExtend.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID_Stage' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/ID_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'EX_Stage' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/EX_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ForwardingUnit' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/ForwardingUnit.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardingUnit' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/ForwardingUnit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALUControl' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/ALUControl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ALUControl' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/ALUControl.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ALU_32bits' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/ALU_32bits.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_32bits' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/ALU_32bits.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'EX_Stage' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/EX_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'MEM_Stage' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/MEM_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/DataMemory.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/DataMemory.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'MEM_Stage' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/MEM_Stage.v:1]
+INFO: [Synth 8-6157] synthesizing module 'WB_Stage' [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/WB_Stage.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'WB_Stage' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/WB_Stage.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Pipeline_CPU' (0#1) [C:/FPGAProject/MIPS_CPU/VerilogFiles/Pipeline/Top_Pipeline_CPU.v:1]
+WARNING: [Synth 8-7129] Port addr[31] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module DataMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[31] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[30] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[29] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[28] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[27] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[26] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[25] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[24] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[23] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[22] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[21] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[20] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[19] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[18] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[17] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[16] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[15] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[14] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[13] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[12] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[11] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[10] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[1] in module InstructionMemory is either unconnected or has no load
+WARNING: [Synth 8-7129] Port addr[0] in module InstructionMemory is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1125.648 ; gain = 609.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1125.648 ; gain = 609.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1125.648 ; gain = 609.609
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1125.648 ; gain = 609.609
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 45    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                1 Bit    Registers := 14    
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 9     
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 32    
+	   9 Input    1 Bit        Muxes := 9     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1461.699 ; gain = 945.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Top_Pipeline_CPU | u_MEM_Stage/u_DataMemory/mem_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1470.586 ; gain = 954.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Top_Pipeline_CPU | u_MEM_Stage/u_DataMemory/mem_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++-----------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance u_IF_Stage/u_instruction_memory/instruction_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_IF_Stage/u_instruction_memory/instruction_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance u_MEM_Stage/u_DataMemory/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1470.586 ; gain = 954.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1581.090 ; gain = 1065.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1581.090 ; gain = 1065.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1581.090 ; gain = 1065.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1581.090 ; gain = 1065.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1582.176 ; gain = 1066.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1582.176 ; gain = 1066.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    29|
+|3     |LUT1     |     3|
+|4     |LUT2     |   145|
+|5     |LUT3     |    64|
+|6     |LUT4     |    35|
+|7     |LUT5     |   110|
+|8     |LUT6     |   736|
+|9     |MUXF7    |   256|
+|10    |RAMB18E1 |     1|
+|11    |RAMB36E1 |     1|
+|12    |FDCE     |  1313|
+|13    |FDPE     |     1|
+|14    |IBUF     |     2|
+|15    |OBUF     |    32|
++------+---------+------+
+
+Report Instance Areas: 
++------+-------------------------+------------------+------+
+|      |Instance                 |Module            |Cells |
++------+-------------------------+------------------+------+
+|1     |top                      |                  |  2729|
+|2     |  u_EX_Stage             |EX_Stage          |   146|
+|3     |    u_ALU_32bits         |ALU_32bits        |    65|
+|4     |  u_ID_Stage             |ID_Stage          |  2140|
+|5     |    u_RegisterFile       |RegisterFile      |  1899|
+|6     |  u_IF_Stage             |IF_Stage          |   154|
+|7     |    u_instruction_memory |InstructionMemory |    33|
+|8     |    u_program_counter    |ProgramCounter    |    34|
+|9     |  u_MEM_Stage            |MEM_Stage         |   190|
+|10    |    u_DataMemory         |DataMemory        |     2|
+|11    |  u_WB_Stage             |WB_Stage          |    64|
++------+-------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1582.176 ; gain = 1066.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 48 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1582.176 ; gain = 1066.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1582.176 ; gain = 1066.137
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1595.191 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 287 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1715.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: a9d2d627
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 1715.719 ; gain = 1206.727
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1715.719 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/FPGAProject/MIPS_CPU/MIPS_CPU.runs/synth_1/Top_Pipeline_CPU.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Top_Pipeline_CPU_utilization_synth.rpt -pb Top_Pipeline_CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 23 15:20:35 2025...

@@ -1,0 +1,60 @@
+//20080005 // addi $t0,$zero,5 0010 0000 0000 1000 
+//20090003 // addi $t1,$zero,3 
+//01095020 // add $t2,$t0,$t1 
+//AC0A0000 // sw $t2,0($zero) 
+//08000000 // j 0($t3) fix the instrution code
+
+20090012   // addi $t1, $zero, 18
+AC090100   // sw   $t1, 0x0100($zero)
+2009F30D   // addi $t1, $zero, -3315
+AC090104   // sw   $t1, 0x0104($zero)
+20090000   // addi $t1, $zero, 0
+AC090108   // sw   $t1, 0x0108($zero)
+2009CF5E   // addi $t1, $zero, -12450
+AC09010C   // sw   $t1, 0x010C($zero)
+2009FFD8   // addi $t1, $zero, -40
+AC090110   // sw   $t1, 0x0110($zero)
+20092710   // addi $t1, $zero, 10000
+AC090114   // sw   $t1, 0x0114($zero)
+200915B1   // addi $t1, $zero, 5553
+AC090118   // sw   $t1, 0x0118($zero)
+200913EC   // addi $t1, $zero, 5100
+AC09011C   // sw   $t1, 0x011C($zero)
+2009FB23   // addi $t1, $zero, -1245
+AC090120   // sw   $t1, 0x0120($zero)
+200933A6   // addi $t1, $zero, 13222
+AC090124   // sw   $t1, 0x0124($zero)
+2009FBEB   // addi $t1, $zero, -1045
+AC090128   // sw   $t1, 0x0128($zero)
+200904BE   // addi $t1, $zero, 1214
+AC09012C   // sw   $t1, 0x012C($zero)
+200924F0   // addi $t1, $zero, 9456
+AC090130   // sw   $t1, 0x0130($zero)
+2009CFC7   // addi $t1, $zero, -12345
+AC090134   // sw   $t1, 0x0134($zero)
+2009270F   // addi $t1, $zero, 9999
+AC090138   // sw   $t1, 0x0138($zero)
+20090000   // addi $t1, $zero, 0
+AC09013C   // sw   $t1, 0x013C($zero)
+20080100   // addi $t0, $zero, 0x0100
+20090010   // addi $t1, $zero, 16
+8D0D0000   // lw   $t5, 0($t0)
+8D0E0000   // lw   $t6, 0($t0)
+2129FFFF   // addi $t1, $t1, -1
+21080004   // addi $t0, $t0, 4
+8D0A0000   // lw   $t2, 0($t0)
+014E582A   // slt  $t3, $t2, $t6
+11600002   // beq  $t3, $zero, +2   (to L2)
+000A7020   // add  $t6, $zero, $t2
+01AA582A   // slt  $t3, $t5, $t2
+11600002   // beq  $t3, $zero, +2   (to L3)
+000A6820   // add  $t5, $zero, $t2
+2129FFFF   // addi $t1, $t1, -1
+1520FFF7   // bne  $t1, $zero, -9   (back to L1)
+00000000   // sll  $zero, $zero, 0  (nop)
+200B0040   // addi $t3, $zero, 0x0040
+AD6D0000   // sw   $t5, 0($t3)
+200B0044   // addi $t3, $zero, 0x0044
+AD6E0000   // sw   $t6, 0($t3)
+0810003D   // j    Done
+00000000   // sll  $zero, $zero, 0  (nop)

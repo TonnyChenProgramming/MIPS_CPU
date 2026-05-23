@@ -1,0 +1,10 @@
+^C:\FPGAPROJECT\MIPS_CPU\VERILOGFILES\PIPELINEREFERENCEMODEL\BUILD\CMAKEFILES\0A43748F713892AF129E0F06CD745D64\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/FPGAProject/MIPS_CPU/VerilogFiles/PipelineReferenceModel -BC:/FPGAProject/MIPS_CPU/VerilogFiles/PipelineReferenceModel/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/FPGAProject/MIPS_CPU/VerilogFiles/PipelineReferenceModel/build/PipelineReferenceModel.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

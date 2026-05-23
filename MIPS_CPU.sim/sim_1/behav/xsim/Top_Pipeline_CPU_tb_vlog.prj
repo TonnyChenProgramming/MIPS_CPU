@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../Xilinx/2025.1/Vivado/data/rsb/busdef" \
+"../../../../VerilogFiles/Pipeline/ALUControl.v" \
+"../../../../VerilogFiles/Pipeline/ALU_32bits.v" \
+"../../../../VerilogFiles/Pipeline/DataMemory.v" \
+"../../../../VerilogFiles/Pipeline/EX_Stage.v" \
+"../../../../VerilogFiles/Pipeline/ForwardingUnit.v" \
+"../../../../VerilogFiles/Pipeline/HazardDetectionUnit.v" \
+"../../../../VerilogFiles/Pipeline/ID_Stage.v" \
+"../../../../VerilogFiles/Pipeline/IF_Stage.v" \
+"../../../../VerilogFiles/Pipeline/InstructionMemory.v" \
+"../../../../VerilogFiles/Pipeline/InstructionToControlSignal.v" \
+"../../../../VerilogFiles/Pipeline/MEM_Stage.v" \
+"../../../../VerilogFiles/Pipeline/ProgramCounter.v" \
+"../../../../VerilogFiles/Pipeline/RegisterFile.v" \
+"../../../../VerilogFiles/Pipeline/SignExtend.v" \
+"../../../../VerilogFiles/Pipeline/Top_Pipeline_CPU.v" \
+"../../../../VerilogFiles/Pipeline/WB_Stage.v" \
+"../../../../MIPS_CPU.srcs/sim_1/new/Top_Pipeline_CPU_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

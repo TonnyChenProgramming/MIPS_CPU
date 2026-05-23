@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.1.1">
+  <diagram name="Page-1" id="tao1vYcUosecorsLM0ms">
+    <mxGraphModel dx="715" dy="1551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aHUEQKIiZQqEjt6AbVgN-11" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;jumpSize=20;endSize=10;startSize=10;" target="aHUEQKIiZQqEjt6AbVgN-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint y="410" />
+              <mxPoint y="110" />
+            </Array>
+            <mxPoint x="40" y="410" as="sourcePoint" />
+            <mxPoint x="170" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Capsule Network Deployed on FPGA Via HLS" vertex="1">
+          <mxGeometry height="30" width="350" x="75" y="-390" as="geometry" />
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="Capsule Network" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="-330" as="geometry" />
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-3" edge="1" parent="1" source="XW30LDM4uWQOEnd-YbCk-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="320" y="-220" as="sourcePoint" />
+            <mxPoint x="240" y="-220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" value="HLS" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="-220" as="geometry" />
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-5" edge="1" parent="1" source="XW30LDM4uWQOEnd-YbCk-4" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="320" y="-220" as="sourcePoint" />
+            <mxPoint x="240" y="-120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="FPGA device" vertex="1">
+          <mxGeometry height="60" width="120" x="180" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-7" parent="1" style="triangle;whiteSpace=wrap;html=1;rotation=-180;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="" vertex="1">
+          <mxGeometry height="60" width="50" x="300" y="-330" as="geometry" />
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-8" parent="1" style="triangle;whiteSpace=wrap;html=1;rotation=-180;strokeColor=default;fillColor=light-dark(#FFFFFF,#7D8C9B);" value="" vertex="1">
+          <mxGeometry height="60" width="50" x="300" y="-220" as="geometry" />
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="Design a CapNet that use less hardware resource without compromising the accuracy" vertex="1">
+          <mxGeometry height="60" width="320" x="350" y="-330" as="geometry" />
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#F0A30A,#7D8C9B);fontColor=#000000;strokeColor=#BD7000;" value="potential better implementation in HDL and Synthesis" vertex="1">
+          <mxGeometry height="60" width="320" x="350" y="-220" as="geometry" />
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-11" parent="1" style="triangle;whiteSpace=wrap;html=1;rotation=-180;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="" vertex="1">
+          <mxGeometry height="60" width="50" x="300" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="XW30LDM4uWQOEnd-YbCk-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" value="Trade Time and Reliability for Power Efficiency" vertex="1">
+          <mxGeometry height="60" width="320" x="350" y="-120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
